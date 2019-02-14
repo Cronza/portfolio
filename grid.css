@@ -1,0 +1,50 @@
+@media(min-width: 10rem) {
+    .col-3of12 {
+        width: 25%;
+    }
+
+    .col-4of12 {
+        width: 33%;
+    }
+
+    .col-6of12 {
+        width: 50%;
+    }
+
+    .col-8of12 {
+        width: 66.6%;
+    }
+    
+    .col-9of12 {
+        width: 75%;
+    }
+
+}
+
+.col-2of12 {
+    width: 50%;
+}
+
+.col-3of12 {
+    width: 100%;
+}
+
+.col-4of12 {
+    width: 100%;
+}
+
+.col-6of12 {
+    width: 100%;
+}
+
+.col-8of12 {
+    width: 100%;
+}
+
+.col-9of12 {
+    width: 100%;
+}
+
+.col-12of12 {
+    width: 100%;
+}
