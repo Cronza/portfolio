@@ -1,65 +1,110 @@
-.flex-container 
-{
+/* 
+  ------------------- CONTAINER STYLING -------------------
+*/
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.flex-container-header
-{
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
+.line-height-increase{
+    line-height: 4rem;
 }
-.spacer
-{
+.spacer{
     margin: 1rem auto;
 }
-.canvas
-{
-     margin: auto 3rem;
-}
-img
-{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-}
-body
-{
+body {
     font-family: arial;
 }
-ul
-{
+
+/* 
+  ------------------- ART STYLING -------------------
+*/
+img {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: auto;
+}
+
+.separator {
+    color: #000000;
+}
+
+/* 
+  ------------------- TEXT / LIST STYLING -------------------
+*/
+ul{
     padding: 0;
     margin: 1rem;
     list-style-position: outside;
 }
-h2
-{
+h1 {
     margin: 0;
 }
-h3
-{
+h2{
     margin: 0;
 }
-.subtext
-{
+h3{
+    margin: 0;
+}
+.subtext {
     font-style: italic;
 }
-.subtext-alignright
-{
+.section-header {
+    background-color: #2a3439;
+    color: #FFFFFF;
+}
+/* 
+  ------------------- BUTTON STYLING -------------------
+*/
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2A3465;
+    margin: 1rem;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+    a:hover,
+    a:focus {
+        color: #ffffff;
+        background: #0CB4E8;
+        border: none;
+        border-bottom: 4px;
+        border-bottom-style: solid;
+        border-bottom-color: #000000;
+    }
+/* 
+  ------------------- ALIGNMENTS -------------------
+*/
+.alignright{
     text-align: right;
-    font-style: italic;
 }
-.subtext-alignbottom
-{
-    font-style: italic;
+.alignleft {
+    text-align: left;
+}
+.aligncenter {
+    text-align: center;
+    align-self: center;
+}
+.alignbottom {
     margin-bottom: 0%;
 }
-.section-header
-{
-    display: flex;
-    justify-content: center;
+.left-to-center-align {
+    text-align: left;
 }
-/*------------------------------------The Grid------------------------------------*/
+
+/* 
+  ------------------- MEDIA QUERIES -------------------
+*/
+
+@media (max-width: 50rem) {
+    .left-to-center-align {
+        text-align: center;
+    }
+}
