@@ -5,137 +5,145 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Binds scaling to window, not browser-->
 <link rel="stylesheet" href="css/grid.css"> <!--Defines what layout css file to use for this page-->
 <link rel="stylesheet" href="css/style.css"> <!--Defines what style css file to use for this page-->
+<link rel="stylesheet" type="text/css" href="slick/slick.css" /> <!--Defines the first slick css file to use for this page-->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> <!--Defines the second slick css file to use for this page-->
 <title>Garrett Fredley - Portfolio</title>
     </Head>
 <body>
     <div class="canvas">
-        <header id="Main-Header" class="flex-container">
+        <header id="Main-Header" class="flex-container main-header">
             <!--******************************* HEADER ***********************************-->
             <div class="col-4of12 aligncenter">
-                <h1>Garrett Fredley</h1>
-                <h2>Technical Developer</h2>
+                <h1 class="colorize-white">Garrett Fredley</h1>
+                <h2 class="colorize-blue">Technical Developer</h2>
             </div><!--endof col-4of12-->
             <div class="col-8of12 left-to-center-align line-height-increase">
-                <a href="https://www.linkedin.com/in/garrett-fredley/">LinkedIn</a>
-                <a href="https://github.com/Cronza">Github</a>
-                <a href="https://www.linkedin.com/in/garrett-fredley/">Resume</a>
+                <a href="https://www.linkedin.com/in/garrett-fredley/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Cronza" target="_blank">Github</a>
+                <a href="https://drive.google.com/file/d/1nPS00rN_SxNAB1yqWh1LjSWu6HgqAng4/view?usp=sharing" target="_blank">Resume</a>
             </div><!--endof col-8of12-->
         </header> <!--endof Main-Header-->
         <!--****************************************************** PROFESSIONAL PROJECTS *********************************************************-->
         <div id="Professional-Projects">
             <div class="flex-container spacer"></div> <!--SPACER-->
-            <div class="aligncenter section-header"><h2>Professional Experience</h2></div> <!--SETION HEADER-->
-            <div class="flex-container spacer"></div> <!--SPACER-->
             <div class="flex-container">
                 <!--PROJECT ONE-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT SLIDESHOW-->
+                    <div class="slideshow" dir="rtl">
+                        <img src="img/EA_Sports/EA_FIFA_19.jpg">
+                        <img src="img/EA_Sports/EA_NHL_19.jpg">
+                        <img src="img/EA_Sports/EA_UFC_3.jpg">
+                    </div>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Software Engineer, Preservation</h2> <!--JOB TITLE-->
-                    <!--COMPANY NAME-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Electronic Arts, Development and Release Engineering, June 2017 - Present</p>
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <!--RESPONSIBILITIES-->
-                                <h3>Responsibilities:</h3>
-                                <ul>
-                                    <li>Leading the development of preservation practices</li>
-                                    <li>Working with global partners to verify production and release details</li>
-                                    <li>Employing Jenkins to automate build production and archival tasks</li>
-                                    <li>Writing Batch / Powershell scripts to interface with SCM solutions</li>
-                                    <li>Using virtual machines to manage customized machine environments</li>
-                                    <li>Utilizing Chef to configure software installations</li>
-                                </ul>
-                            </div><!--endof col-8of12-->
-                            <div class="col-4of12">
-                                <!--PROJECTS-->
-                                <h3>Projects:</h3>
-                                <ul>
-                                    <li>FIFA 18</li>
-                                    <li>FIFA 19</li>
-                                    <li>UFC 3</li>
-                                    <li>NHL 19</li>
-                                </ul>
-                            </div><!--endof col-4of12-->
-                        </div>
-                    </div><!--endof col-12of12-->
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Software Engineer, Preservation</h2> <!--JOB TITLE-->
+                        <!--COMPANY NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Electronic Arts, Development and Release Engineering, June 2017 - Present</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <div class="col-8of12">
+                                    <!--RESPONSIBILITIES-->
+                                    <h3>Responsibilities:</h3>
+                                    <ul>
+                                        <li>Leading the development of preservation practices</li>
+                                        <li>Working with global partners to verify production and release details</li>
+                                        <li>Employing Jenkins to automate build production and archival tasks</li>
+                                        <li>Writing Batch / Powershell scripts to interface with SCM solutions</li>
+                                        <li>Using virtual machines to manage customized machine environments</li>
+                                        <li>Utilizing Chef to configure software installations</li>
+                                    </ul>
+                                </div><!--endof col-8of12-->
+                                <div class="col-4of12">
+                                    <!--PROJECTS-->
+                                    <h3>Projects:</h3>
+                                    <ul>
+                                        <li>FIFA 18</li>
+                                        <li>FIFA 19</li>
+                                        <li>UFC 3</li>
+                                        <li>NHL 19</li>
+                                    </ul>
+                                </div><!--endof col-4of12-->
+                            </div>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
-            <hr class="separator"/> <!--HORIZONTAL SEPARATOR-->
+            <hr /> <!--HORIZONTAL SEPARATOR-->
             <div class="flex-container spacer"></div> <!--SPACER-->
             <div class="flex-container">
                 <!--PROJECT TWO-->
-                <div class="col-6of12">
+                <div class="col-6of12 ">
                     <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <img src="img/LaSalle_College_Vancouver.jpg">
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Instructor</h2> <!--JOB TITLE-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">LaSalle College, Game Art and Design, April 2018 - Present</p> <!--COMPANY NAME-->
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <h3>Responsibilities:</h3> <!--RESPONSIBILITIES-->
-                                <ul>
-                                    <li>Instruct students on Unreal Engine 4 and Unity fundamentals</li>
-                                    <li>Train students on authoring tools in Maya using Python and Pyside</li>
-                                    <li>Introduce Agile Development Theory through Scrum</li>
-                                </ul>
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Instructor</h2> <!--JOB TITLE-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">LaSalle College, Game Art and Design, April 2018 - Present</p> <!--COMPANY NAME-->
                             </div>
-                        </div>
-                    </div><!--endof col-12of12-->
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <h3>Responsibilities:</h3> <!--RESPONSIBILITIES-->
+                            <ul>
+                                <li>Instruct students on Unreal Engine 4 and Unity fundamentals</li>
+                                <li>Train students on authoring tools in Maya using Python and Pyside</li>
+                                <li>Introduce Agile Development Theory through Scrum</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
-            </div><!--endof Project-->
+             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
-            <hr  class="separator"/> <!--HORIZONTAL SEPARATOR-->
+            <hr/> <!--HORIZONTAL SEPARATOR-->
             <div class="flex-container spacer"></div> <!--SPACER-->
             <div class="flex-container">
                 <!--PROJECT THREE-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT VIDEO-->
+                    <video controls poster="img/EA_Sports/EA_FIFA_17.jpg">
+                        <source src="video/EA_FIFA_17_Trailer.mp4" type="video/mp4" />
+                    </video>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Assistant Technical Artist, Pipeline Tools</h2> <!--JOB TITLE-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Electronic Arts, Artworks, June 2016 - June 2017</p> <!--COMPANY NAME-->
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <h3>Responsibilities:</h3> <!--RESPONSIBILITIES-->
-                                <ul>
-                                    <li>Assisted in asset management and conversions for characters</li>
-                                    <li>Debugged C#, Python, and MEL scripts to fix issues</li>
-                                    <li>Improved the asset pipeline by automating processes in code</li>
-                                    <li>Created documentation of both existing and new procedures</li>
-                                </ul>
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Assistant Technical Artist, Pipeline Tools</h2> <!--JOB TITLE-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Electronic Arts, Artworks, June 2016 - June 2017</p> <!--COMPANY NAME-->
                             </div>
-                            <div class="col-4of12">
-                                <h3>Projects:</h3> <!--PROJECTS-->
-                                <ul>
-                                    <li>FIFA 17</li>
-                                </ul>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <div class="col-8of12">
+                                    <h3>Responsibilities:</h3> <!--RESPONSIBILITIES-->
+                                    <ul>
+                                        <li>Assisted in asset management and conversions for characters</li>
+                                        <li>Debugged C#, Python, and MEL scripts to fix issues</li>
+                                        <li>Improved the asset pipeline by automating processes in code</li>
+                                        <li>Created documentation of both existing and new procedures</li>
+                                    </ul>
+                                </div><!--endof col-8of12-->
+                                <div class="col-4of12">
+                                    <h3>Projects:</h3> <!--PROJECTS-->
+                                    <ul>
+                                        <li>FIFA 17</li>
+                                    </ul>
+                                </div><!--endof col-4of12-->
                             </div>
-                        </div>
-                    </div><!--endof col-12of12-->
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
@@ -143,36 +151,48 @@
         <!--****************************************************** PERSONAL PROJECTS *********************************************************-->
         <div id="Projects">
             <div class="flex-container spacer"></div> <!--SPACER-->
-            <div class="aligncenter section-header"><h2>Personal Works</h2></div> <!--SETION HEADER-->
+            <div class="flex-container">
+                <div class="col-4of12 aligncenter center">
+                    <hr class="section-separator colorize-blue" /> <!--HORIZONTAL SEPARATOR-->
+                </div>
+                <div class="col-4of12">
+                    <h2 class="section-header aligncenter">Personal Works</h2>
+                </div>
+                <div class="col-4of12">
+                    <hr class="section-separator colorize-blue" /> <!--HORIZONTAL SEPARATOR-->
+                </div>
+            </div> <!--SETION HEADER-->
             <div class="flex-container spacer"></div> <!--SPACER-->
-
             <div class="flex-container">
                 <!--PROJECT ONE-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT SLIDESHOW-->
+                    <div class="slideshow" dir="rtl">
+                        <img src="img/GVNEngine/GVNEngine_01.jpg">
+                        <img src="img/GVNEngine/GVNEngine_02.jpg">
+                        <img src="img/GVNEngine/GVNEngine_03.jpg">
+                        <img src="img/GVNEngine/GVNEngine_04.jpg">
+                    </div>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>GVNEngine</h2> <!--PROJECT NAME-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Creator, Monogame / .NET Game Engine, Dec 2017 - Present</p>
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <!--RESPONSIBILITIES-->
-                                <h3>Responsibilities:</h3>
-                                <ul>
-                                    <li>Utilizing Monogame to create a basic visual novel game framework</li>
-                                    <li>Using XML to read initialization settings and game dialogue</li>
-                                    <li>Wrote a simplified state manager to containerize logic</li>
-                                </ul>
-                            </div><!--endof col-8of12-->
-                        </div>
-                    </div><!--endof col-12of12-->
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>GVNEngine</h2> <!--PROJECT NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Creator, Monogame / .NET Game Engine, Dec 2017 - Present</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <!--RESPONSIBILITIES-->
+                            <h3>Responsibilities:</h3>
+                            <ul>
+                                <li>Utilizing Monogame to create a basic visual novel game framework</li>
+                                <li>Using XML to read initialization settings and game dialogue</li>
+                                <li>Wrote a simplified state manager to containerize logic</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
@@ -181,34 +201,37 @@
             <div class="flex-container">
                 <!--PROJECT TWO-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT SLIDESHOW-->
+                    <div class="slideshow" dir="rtl">
+                        <img src="img/Reflector/Reflector_Game_Image_1.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_2.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_3.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_4.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_5.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_6.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_7.jpg">
+                        <img src="img/Reflector/Reflector_Game_Image_8.jpg">
+                    </div>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Deep Below</h2> <!--PROJECT NAME-->
-                    <!--COMPANY NAME-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Producer, Senior Academic Project, April 2015 - May 2016</p>
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <!--RESPONSIBILITIES-->
-                                <h3>Responsibilities:</h3>
-                                <ul>
-                                    <li>Wrote and managed the GDD and GVD</li>
-                                    <li>Rigged, Animated, and Scripted the player's gauntlet and it's animation states</li>
-                                    <li>Provided scripting support on 5+ movement, U.I, and interaction systems</li>
-                                    <li>Make design decisions that provide a thrilling VR experience</li>
-                                    <li>Lead scrum meetings each work day</li>
-                                    <li>Manage the scrum board and align tasks to the milestone goals</li>
-                                </ul>
-                            </div><!--endof col-8of12-->
-                        </div>
-                    </div><!--endof col-12of12-->
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Reflector</h2> <!--PROJECT NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Programmer, 48 Hour Game Jam Project, April 2017</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <!--RESPONSIBILITIES-->
+                            <h3>Responsibilities:</h3>
+                            <ul>
+                                <li>Developed the core reflection system</li>
+                                <li>Designed and constructed the front-end and in-game U.I</li>
+                                <li>Built a modular system for reflector and destructible blocks</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
@@ -217,31 +240,34 @@
             <div class="flex-container">
                 <!--PROJECT THREE-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT VIDEO-->
+                    <video controls poster="img/Deep_Below.jpg">
+                        <source src="video/Garret_Fredley_Deep_Below_Reel.mp4" type="video/mp4" />
+                    </video>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Bound</h2> <!--PROJECT NAME-->
-                    <!--COMPANY NAME-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Scripter / Artist, Academic Project, Jan 2016 - Mar 2016</p>
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <!--RESPONSIBILITIES-->
-                                <h3>Responsibilities:</h3>
-                                <ul>
-                                    <li>Designed, Created, and Scripting the A.I and Model of Elaine</li>
-                                    <li>Scripting two unique puzzles, including an item acquisition and extraction system</li>
-                                    <li>Created all 2D and 3D assets</li>
-                                </ul>
-                            </div><!--endof col-8of12-->
-                        </div>
-                    </div><!--endof col-12of12-->
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Deep Below</h2> <!--PROJECT NAME-->
+                        <!--COMPANY NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Lead Designer & Producer, Senior Academic Project, April 2015 - May 2016</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <!--RESPONSIBILITIES-->
+                            <h3>Responsibilities:</h3>
+                            <ul>
+                                <li>Wrote and managed the GDD and GVD</li>
+                                <li>Rigged, Animated, and Scripted the player's gauntlet and it's animation states</li>
+                                <li>Provided scripting support on 5+ movement, U.I, and interaction systems</li>
+                                <li>Make design decisions that provide a thrilling VR experience</li>
+                                <li>Lead scrum meetings each work day</li>
+                                <li>Manage the scrum board and align tasks to the milestone goals</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
             <div class="flex-container spacer"></div> <!--SPACER-->
@@ -250,35 +276,87 @@
             <div class="flex-container">
                 <!--PROJECT FOUR-->
                 <div class="col-6of12">
-                    <!--PROJECT IMAGE-->
-                    <img src="https://images.unsplash.com/photo-1519575706483-221027bfbb31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    <!--PROJECT VIDEO-->
+                    <video controls poster="img/Bound.jpg">
+                        <source src="video/Garrett_Fredley_Bound_Reel.mp4" type="video/mp4" />
+                    </video>
                 </div><!--endof col-6of12-->
                 <div class="col-6of12">
-                    <!--PROJECT DETAILS-->
-                    <h2>Bootstrap</h2> <!--PROJECT NAME-->
-                    <!--COMPANY NAME-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <p class="subtext alignleft">Scripter, Academic Project, Jan 2016 - Mar 2016</p>
-                        </div>
-                    </div> <!--endof col-12of12-->
-                    <div class="col-12of12">
-                        <div class="flex-container">
-                            <div class="col-8of12">
-                                <!--RESPONSIBILITIES-->
-                                <h3>Responsibilities:</h3>
-                                <ul>
-                                    <li>Scripted a core puzzle mechanic to be fully modular and futureproofed</li>
-                                    <li>Created a modular elevator with built in acceleration and deceleration</li>
-                                    <li>Provided technical support regarding usage of the Unreal 4 Engine</li>
-                                    <li>Provided advice on working with the Oculus Rift hardware and the usage of VR in games</li>
-                                    <li>Provided scripting support on the construction of numerous prop systems in the game</li>
-                                </ul>
-                            </div><!--endof col-8of12-->
-                        </div>
-                    </div><!--endof col-12of12-->
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Bound</h2> <!--PROJECT NAME-->
+                        <!--COMPANY NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Scripter / Artist, Academic Project, Jan 2016 - Mar 2016</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <!--RESPONSIBILITIES-->
+                            <h3>Responsibilities:</h3>
+                            <ul>
+                                <li>Designed, Created, and Scripting the A.I and Model of Elaine</li>
+                                <li>Scripting two unique puzzles, including an item acquisition and extraction system</li>
+                                <li>Created all 2D and 3D assets</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
                 </div><!--endof col-6of12-->
             </div><!--endof Project-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <hr /> <!--HORIZONTAL SEPARATOR-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container">
+                <!--PROJECT FIVE-->
+                <div class="col-6of12">
+                    <!--PROJECT VIDEO-->
+                    <video controls poster="img/Bootstrap.jpg">
+                        <source src="video/Garrett_Fredley_Bootstrap_Reel.mp4" type="video/mp4" />
+                    </video>
+                </div><!--endof col-6of12-->
+                <div class="col-6of12">
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>Bootstrap</h2> <!--PROJECT NAME-->
+                        <!--COMPANY NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Scripter, Academic Project, Jan 2016 - Mar 2016</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <!--RESPONSIBILITIES-->
+                            <h3>Responsibilities:</h3>
+                            <ul>
+                                <li>Scripted a core puzzle mechanic to be fully modular and futureproofed</li>
+                                <li>Created a modular elevator with built in acceleration and deceleration</li>
+                                <li>Provided technical support regarding usage of the Unreal 4 Engine</li>
+                                <li>Provided advice on working with the Oculus Rift hardware and the usage of VR in games</li>
+                                <li>Provided scripting support on the construction of numerous prop systems in the game</li>
+                            </ul>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
+                </div><!--endof col-6of12-->
+            </div><!--endof Project-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
         </div> <!--endof Projects--> <!--****************************************************************************************************************-->
+       
+        <!--Load the slick js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <!--Define image slideshow settings-->
+        <script type="text/javascript">
+            $('.slideshow').slick({
+                rtl: true,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                adaptiveHeight: false
+                
+                
+            });
+        </script>
 </body>
 </html>
