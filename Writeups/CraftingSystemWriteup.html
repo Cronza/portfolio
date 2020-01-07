@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+    </Head> <!--Brains of the page, not a header-->
+<meta charset="UTF-8"> <!--Allows usage on all sorts of devices / Unifies characters-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Binds scaling to window, not browser-->
+<link rel="stylesheet" href="../css/grid.css"> <!--Defines what layout css file to use for this page-->
+<link rel="stylesheet" href="../css/style.css"> <!--Defines what style css file to use for this page-->
+<link rel="stylesheet" type="../text/css" href="../slick/slick.css" /> <!--Defines the first slick css file to use for this page-->
+<link rel="stylesheet" type="../text/css" href="../slick/slick-theme.css" /> <!--Defines the second slick css file to use for this page-->
+<title>Garrett Fredley - Portfolio</title>
+    </Head>
+<body>
+    <div class="canvas">
+        <header id="Main-Header" class="flex-container main-header">
+            <!--******************************* HEADER ***********************************-->
+            <div class="col-4of12 aligncenter">
+                <h1 class="colorize-white">Garrett Fredley</h1>
+                <h2 class="colorize-blue">Technical Developer</h2>
+            </div><!--endof col-4of12-->
+            <div class="col-8of12 left-to-center-align line-height-increase">
+                <a href="../index.html" class="link-button">Projects</a>
+                <a href="../Writeups.html" class="link-button">Writeups</a>
+                <a href="https://www.linkedin.com/in/garrett-fredley/" target="_blank" class="link-button">LinkedIn</a>
+                <a href="https://github.com/Cronza" target="_blank" class="link-button">Github</a>
+                <a href="https://drive.google.com/file/d/1nPS00rN_SxNAB1yqWh1LjSWu6HgqAng4/view?usp=sharing" target="_blank" class="link-button">Resume</a>
+            </div><!--endof col-8of12-->
+        </header> <!--endof Main-Header-->
+        <!--****************************************************** WRITEUPS *********************************************************-->
+        <div id="Writeups">
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container">
+                <!--PROJECT-->
+                <div class="col-6of12">
+                    <!--PROJECT SLIDESHOW-->
+                    <div class="slideshow" dir="rtl">
+                        <img src="../img/EA_Sports/EA_FIFA_19.jpg">
+                        <img src="../img/EA_Sports/EA_NHL_19.jpg">
+                        <img src="../img/EA_Sports/EA_UFC_3.jpg">
+                    </div>
+                </div><!--endof col-6of12-->
+                <div class="col-6of12">
+                    <div class="detail-buffer">
+                        <!--PROJECT DETAILS-->
+                        <h2>lolololol</h2> <!--JOB TITLE-->
+                        <!--COMPANY NAME-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <p class="subtext alignleft">Unreal Engine 4, Blueprints, Nov 2019</p>
+                            </div>
+                        </div> <!--endof col-12of12-->
+                        <div class="col-12of12">
+                            <div class="flex-container">
+                                <div class="col-12of12">
+                                    <!--RESPONSIBILITIES-->
+                                    <h3>Highlights:</h3>
+                                    <ul>
+                                        <li>Created a scalable system that read in data using Data Tables</li>
+                                        <li>Authored a method of creating crafting recipes that allowed rapid content generation</li>
+                                        <li>Defined a standard that would allow easy integration with other systems</li>
+                                        <li>Revealed a fundamental issue with widget garbage collection</li>
+                                    </ul>
+                                </div><!--endof col-12of12-->
+                                <a href="../index.html" class="inline-link-button">Writeup</a>
+                            </div>
+                        </div><!--endof col-12of12-->
+                    </div><!--endof DetailBuffer-->
+                </div><!--endof col-6of12-->
+            </div><!--endof Project-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+        </div> <!--endof Writeups-->       
+        <!--Load the slick js-->
+        <script type="../text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="../text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="../text/javascript" src="../slick/slick.min.js"></script>
+
+        <!--Define image slideshow settings-->
+        <script type="../text/javascript">
+            $('.slideshow').slick({
+                rtl: true,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                adaptiveHeight: false
+                
+                
+            });
+        </script>
+</body>
+</html>

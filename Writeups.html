@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+    </Head> <!--Brains of the page, not a header-->
+<meta charset="UTF-8"> <!--Allows usage on all sorts of devices / Unifies characters-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Binds scaling to window, not browser-->
+<link rel="stylesheet" href="css/grid.css"> <!--Defines what layout css file to use for this page-->
+<link rel="stylesheet" href="css/style.css"> <!--Defines what style css file to use for this page-->
+<link rel="stylesheet" type="text/css" href="slick/slick.css" /> <!--Defines the first slick css file to use for this page-->
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> <!--Defines the second slick css file to use for this page-->
+<title>Garrett Fredley - Portfolio</title>
+    </Head>
+<body>
+    <div class="canvas">
+        <header id="Main-Header" class="flex-container main-header">
+            <!--******************************* HEADER ***********************************-->
+            <div class="col-4of12 aligncenter">
+                <h1 class="colorize-white">Garrett Fredley</h1>
+                <h2 class="colorize-blue">Technical Developer</h2>
+            </div><!--endof col-4of12-->
+            <div class="col-8of12 left-to-center-align line-height-increase">
+                <a href="index.html" class="link-button">Projects</a>
+                <a href="Writeups.html" class="link-button">Writeups</a>
+                <a href="https://www.linkedin.com/in/garrett-fredley/" target="_blank" class="link-button">LinkedIn</a>
+                <a href="https://github.com/Cronza" target="_blank" class="link-button">Github</a>
+                <a href="https://drive.google.com/file/d/1nPS00rN_SxNAB1yqWh1LjSWu6HgqAng4/view?usp=sharing" target="_blank" class="link-button">Resume</a>
+            </div><!--endof col-8of12-->
+        </header> <!--endof Main-Header-->
+        <!--****************************************************** WRITEUPS *********************************************************-->
+        <div id="Writeups">
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container writeup">
+                <!--WRITEUP-->
+                <div class="col-6of12">
+                    <div class="flex-container">
+                        <a href="Writeups/CraftingSystemWriteup.html" class="inline-link-button">Creating a Data-Driven Crafting System in Blueprints</a>
+                    </div>
+                </div><!--endof col-6of12-->
+                <div class="col-4of12">
+                    <!--WRITEUP DETAILS-->
+                    <p class="subtext aligncenter">Unreal Engine 4, Blueprints</p>
+                </div><!--endof col-4of12-->
+                <div class="col-2of12">
+                    <!--WRITEUP DATE-->
+                    <p class="subtext alignright">Nov 2019</p>
+                    </div><!--endof col-2of12-->
+            </div><!--endof Writeup-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container writeup">
+                <!--WRITEUP-->
+                <div class="col-6of12">
+                    <div class="flex-container">
+                        <a href="Writeups/CraftingSystemWriteup.html" class="inline-link-button">Employing Perforce Triggers to Manage Server Submissions</a>
+                    </div>
+                </div><!--endof col-6of12-->
+                <div class="col-4of12">
+                    <!--WRITEUP DETAILS-->
+                    <p class="subtext aligncenter">Perforce, Powershell / Python / Batch</p>
+                </div><!--endof col-4of12-->
+                <div class="col-2of12">
+                    <!--WRITEUP DATE-->
+                    <p class="subtext alignright">Nov 2019</p>
+                    </div><!--endof col-2of12-->
+            </div><!--endof Writeup-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+            <div class="flex-container spacer"></div> <!--SPACER-->
+        </div> <!--endof Professional Projects-->
+       
+        <!--Load the slick js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <!--Define image slideshow settings-->
+        <script type="text/javascript">
+            $('.slideshow').slick({
+                rtl: true,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                adaptiveHeight: false
+                
+                
+            });
+        </script>
+</body>
+</html>
